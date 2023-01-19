@@ -1,3 +1,5 @@
+import com.fasterxml.jackson.databind.ser.std.NumberSerializers.FloatSerializer;
+
 //see test cases.
 public class ArraysAreEqual {
     /**
@@ -15,6 +17,16 @@ public class ArraysAreEqual {
      * @return true if the values of a are equal to the values of b.
      */
     public boolean equal(int[] a, int[] b){
-        return false;
+        boolean check = true;
+
+        for (int i = 0; i < a.length; i++){
+            
+            if(a[i] != b[i]){
+                check = false;
+                break;
+            }
+        }
+
+        return check;
     }
 }
