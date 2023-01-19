@@ -1,0 +1,1 @@
+SELECT * FROM employee WHERE salary > 50000 and first_name != 'Steve'
