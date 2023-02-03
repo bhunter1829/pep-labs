@@ -31,7 +31,7 @@ public class ReturnArrayContents {
      */
     public String arrayToString(int[] nums){
 
-        String numberstring = "";
+        String numberstring = " ";
 
         for(int i = 0; i < nums.length; i++){
             
