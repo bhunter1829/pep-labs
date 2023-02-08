@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 
 public class ArrayAbsoluteValue {
     /**
@@ -9,6 +10,18 @@ public class ArrayAbsoluteValue {
      * @return the absolute value array of nums.
      */
     public int[] getArrayAbs(int[] nums){
-        return null;
+        int[] tempArr = new int[nums.length];
+
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] < 0){
+                int x = nums[i] - nums[i] +- nums[i];
+                tempArr[i] = x;
+            }
+            else{
+                tempArr[i] = nums[i];
+            }
+        }
+
+        return tempArr;
     }
 }
